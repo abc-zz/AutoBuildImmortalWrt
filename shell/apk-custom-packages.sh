@@ -13,6 +13,7 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES ddns-scripts-aliyun"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES bind-host"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES knot-host"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES drill"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-vlmcsd-zh-cn"
 
 # ===================================================================================================
 # 各位注意 如果你构建的固件是硬路由 此文件的注释要酌情考虑是否打开 因为硬路由的闪存空间有限 若构建出来过大或者构建失败 记得调整本文件的注释
