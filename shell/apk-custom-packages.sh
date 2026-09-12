@@ -4,14 +4,15 @@
 # ============= 但此文件也可以处理仓库内的软件去留 本质上是做了一个PACKAGES字符串的拼接 ================
 
 # ========自行添加的包 =====================
-PACKAGES="$PACKAGES nano-full"
-PACKAGES="$PACKAGES nano-plus"
-PACKAGES="$PACKAGES lsblk"
-PACKAGES="$PACKAGES cfdisk"
-PACKAGES="$PACKAGES luci-theme-argon"
-PACKAGES="$PACKAGES ddns-scripts-cloudflare"
-PACKAGES="$PACKAGES ddns-scripts-aliyun"
-PACKAGES="$PACKAGES luci-i18n-haproxy-tcp-zh-cn"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES nano-full"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES lsblk"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES cfdisk"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-theme-argon"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES ddns-scripts-cloudflare"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES ddns-scripts-aliyun"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES bind-host"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES knot-host"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES drill"
 
 # ===================================================================================================
 # 各位注意 如果你构建的固件是硬路由 此文件的注释要酌情考虑是否打开 因为硬路由的闪存空间有限 若构建出来过大或者构建失败 记得调整本文件的注释
@@ -117,7 +118,7 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-cloudflared-zh-cn"
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-example-zh-cn"
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-fwknopd-zh-cn"
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-gost-zh-cn"
-#CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-haproxy-tcp-zh-cn"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-haproxy-tcp-zh-cn"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-hd-idle-zh-cn"
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-https-dns-proxy-zh-cn"
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-ipsec-vpnd-zh-cn"
